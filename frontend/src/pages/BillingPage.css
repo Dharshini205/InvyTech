@@ -1,0 +1,222 @@
+/* Root Container */
+.billing-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #fdfdfd;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Page Title */
+.billing-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+  color: #2c3e50;
+}
+
+/* Form Wrapper */
+.billing-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Customer Name Input */
+.billing-form input[type="text"] {
+  padding: 10px 14px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.billing-form input[type="text"]:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+/* Section Headings */
+.billing-form h3 {
+  margin-top: 20px;
+  color: #2c3e50;
+}
+
+/* Grid Layout for Inventory Items */
+.item-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 18px;
+}
+
+/* Item Card Box */
+.item-card {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 12px;
+  text-align: center;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.item-card:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.item-card p {
+  margin: 6px 0;
+  font-size: 15px;
+}
+
+.item-card button {
+  margin-top: 8px;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 5px;
+  background-color: #3498db;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+.item-card button:hover {
+  background-color: #007bff;
+}
+
+.item-card button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+/* Cart Table */
+.billing-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.billing-table th,
+.billing-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.billing-table input[type="number"] {
+  width: 60px;
+  padding: 6px;
+  text-align: center;
+  font-size: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.billing-table input[type="number"]:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+/* Remove Button (Improved Styling) */
+.billing-table .remove-btn {
+  padding: 6px 12px;
+  font-size: 14px;
+  background-color: #e74c3c !important;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.remove-btn:hover {
+  background-color: #c0392b !important;
+}
+
+.remove-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(231, 76, 60, 0.3);
+}
+
+/* Total Amount Container */
+.total-card {
+  text-align: right;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px 0;
+  background: #fbfbfb;
+  border-top: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+/* Main Action Button (Submit Bill) */
+.billing-form button {
+  padding: 12px 20px;
+  font-size: 16px;
+  background-color: #27ae60;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+ 
+}
+
+.billing-form button:hover {
+  background-color: #1e8449;
+}
+
+
+
+/* Notification Box (Fixed Style) */
+.notification-box {
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  background-color: white;
+  border: 2px solid #4caf50;
+  border-radius: 8px;
+  padding: 12px 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  z-index: 999;
+  min-width: 250px;
+  font-size: 14px;
+  color: #333;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Fixes */
+@media (max-width: 600px) {
+  .billing-table th,
+  .billing-table td {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .item-card p {
+    font-size: 14px;
+  }
+
+  .billing-container h2 {
+    font-size: 22px;
+  }
+
+  .billing-form input[type="text"] {
+    font-size: 14px;
+  }
+}
