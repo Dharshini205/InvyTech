@@ -1,0 +1,27 @@
+.hr-navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #495057; /* slightly lighter than main navbar */
+  padding: 1rem 2rem;
+  color: white;
+}
+
+.hr-navbar .logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.hr-navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.hr-navbar .nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.hr-navbar .nav-links a:hover {
+  text-decoration: underline;
+}

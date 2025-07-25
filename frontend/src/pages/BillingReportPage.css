@@ -1,0 +1,28 @@
+.report-header {
+  padding: 20px;
+  background: #f4f4f4;
+  text-align: center;
+}
+
+.report-table {
+  width: 90%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background: #fff;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.report-table th,
+.report-table td {
+  padding: 12px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.report-table th {
+  background: #f0f0f0;
+}
+
+.report-table tr:nth-child(even) {
+  background-color: #fafafa;
+}

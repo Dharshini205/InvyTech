@@ -1,0 +1,93 @@
+/* Wrapper to make footer at bottom */
+.login-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  background-color: #f6f9fc;
+  padding: 1rem;
+}
+
+/* Login box */
+.login-container {
+  max-width: 400px;
+  margin: auto;
+  padding: 3rem;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+}
+
+.login-container h2 {
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 0.9rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 0.9rem;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background-color 0.2s ease;
+}
+
+.login-container button:hover {
+  background-color: #3b7dc4;
+}
+
+/* Message styling */
+.message {
+  margin-top: 1rem;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.message.error {
+  color: #e74c3c;
+}
+
+.message.success {
+  color: #27ae60;
+}
+
+/* Signup link below form */
+.signup-link {
+  margin-top: 1rem;
+  font-size: 14px;
+  color: #555;
+}
+
+.signup-link a {
+  color: #4a90e2;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
+
+/* Footer styled and pushed to bottom */
+.login-footer {
+  text-align: center;
+  color: #888;
+  font-size: 13px;
+  margin-top: 2rem;
+  padding-bottom: 0.5rem;
+}
