@@ -53,6 +53,22 @@ Backend
 - MongoDB (Mongoose) 
 - JSON Web Token (JWT)
 
+Setup Frontend
+cd frontend
+npm install
+npm start
+
+Setup Backend
+cd backend
+npm install
+npm run dev
+
+📌 Note
+Make sure to configure your .env file for backend environment variables like:
+
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
 Folder Structure
 <img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/2c3bb3cf-f344-43c8-95c7-6df2767e2d46" />
 
